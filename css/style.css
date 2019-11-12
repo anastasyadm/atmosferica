@@ -27,6 +27,7 @@ html {
     height: 75%;
     /* height: 43em; */
     min-height: 350px;
+    height: auto;
 }
 
 .header {
@@ -66,6 +67,13 @@ nav ul li:nth-child(2) {
 .logo {
     margin-right: 27em;
     margin-left: 0em;
+}
+
+.second,
+.second > a,
+.second > button,
+.second > p {
+    color: black;
 }
 
 nav a {
@@ -252,7 +260,77 @@ button {
     max-width: 100%;
 }
 
-/*Slider*/
+/*About*/
+.about {
+    min-height: 863, 06px;
+}
+
+.img-about {
+    background-image: url(../img/dots.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+}
+
+/*.img-about img {
+    width: 50%;
+    height: 50%;
+}*/
+
+.img-first {
+    top: 25%;
+    right: 60%;
+    position: fixed;
+    width: 24%;
+    height: 50%;
+    z-index: 2;
+}
+
+.img-second {
+    top: 70%;
+    right: 62%;
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    z-index: 1;
+}
+
+/*service*/
+.price {
+    margin-top: 5.5em;
+}
+
+.first-col {
+    width: 22em;
+}
+
+table {
+    margin-top: 5.5em;
+    width: 44em;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    border: 1px solid #595959;
+}
+
+td,
+th {
+    padding: 3px;
+    width: 30px;
+    height: 25px;
+}
+
+th {
+    background-color: #7accee !important;
+}
+
 /*footer*/
 .footer {
     position: relative;
@@ -293,6 +371,31 @@ button {
     background-image: url(../img/logoinst.png);
 }
 
+.social-btn-vk:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/logovk2.png);
+}
+
+.social-btn-insta:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/logoinst2.png);
+}
+
+.second .social-btn-vk {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/logovk2.png);
+}
+
+.second .social-btn-insta {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/logoinst2.png);
+}
+
+
 .footer-contact {
     display: flex;
     margin-left: auto;
@@ -301,6 +404,11 @@ button {
     border-top: 1.3px solid white;
     margin-top: 1.4em;
 
+}
+
+.second > .footer-contact {
+    border-top: 1.3px solid #C9DFFA;
+    color: black;
 }
 
 .footer-contact > p {
