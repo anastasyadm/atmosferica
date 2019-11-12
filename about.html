@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Atmosferica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" type="image/png" href="images\logo.png">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar" class="menu-btn-active header">
+
+        <div class="inner">
+            <nav>
+                <a href="#" class="menu-btn">
+                    <span></span>
+                </a>
+                <ul>
+                    <li class="logo"><a href="index.html"><img src="img/logoblue.png" width="230" height="36" /></a></li>
+                    <li class="menu2"><a href="index.html">Главная</a></li>
+                    <li class="menu2"><a href="about.html">О нас</a></li>
+                    <li class="menu2"><a href="service2.html">Услуги и цены</a></li>
+                    <li class="menu2"><a href="works.html">Наши работы</a></li>
+                    <li class="menu2"><a href="contacts.html">Контакты</a></li>
+                    <li class="btn2"><button>Онлайн-запись</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Intro -->
+
+        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  popup-form" role="document">
+                <form action="#">
+                    <a class="closebtn"><span aria-hidden="true">&times;</span></a>
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Что вы хотите</label>
+                            <textarea name="message" id="message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" class="button submit buy-btn" value="отправить">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>-->
+        <footer class="footer">
+            <section class="footer-social">
+                <a class="social-btn social-btn-insta" href="#"></a>
+                <a class="social-btn social-btn-vk" href="#"></a>
+            </section>
+            <section class="footer-contact">
+                <p>8 800 555 35 35</p>
+                <p>Санкт-Петербург, Пр. Луначарского, 11</p>
+            </section>
+        </footer>
+        <!-- Scripts -->
+        <script>
+            var link = document.querySelector(".buy-btn");
+            var form = document.querySelector(".popup-form");
+            var checkin = form.querySelector("[name=name-user]");
+            var checkout = form.querySelector("[name=name-email]");
+            var close = document.querySelector(".closebtn");
+
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                form.classList.toggle("popup-form-show");
+                checkin.focus();
+                form.classList.remove("popup-form-error");
+            });
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                form.classList.remove("popup-form-show");
+            });
+
+            window.addEventListener("keydown", function(event) {
+                if (event.keyCode === 27) {
+                    if (form.classList.contains("popup-form-show")) {
+                        form.classList.remove("popup-form-show");
+                        form.classList.remove("popup-form-error");
+                    }
+                }
+            });
+
+            form.addEventListener("submit", function(event) {
+                if (!checkin.value || !checkout.value) {
+                    event.preventDefault();
+                    form.classList.add("popup-form-error");
+                }
+            });
+
+        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.scrollex.min.js"></script>
+        <script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/browser.min.js"></script>
+        <script src="js/breakpoints.min.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
