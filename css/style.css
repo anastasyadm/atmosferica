@@ -289,20 +289,20 @@ button {
 }*/
 
 .img-first {
-    top: 25%;
-    right: 60%;
-    position: fixed;
-    width: 24%;
+    top: 10%;
+    right: 20%;
+    position: absolute;
+    width: 50%;
     height: 50%;
     z-index: 2;
 }
 
 .img-second {
-    top: 70%;
-    right: 62%;
-    position: fixed;
-    width: 30%;
-    height: 30%;
+    top: 50%;
+    right: 20%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
     z-index: 1;
 }
 
@@ -356,7 +356,8 @@ th {
 }
 
 /*Contact*/
-.contact {
+.contact,
+.about {
     display: flex;
     flex-wrap: wrap;
     padding: 0 5em;
@@ -364,13 +365,15 @@ th {
     margin-bottom: 5em;
 }
 
-.text-contact {
+.text-contact,
+.img-about {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: left;
 }
 
-.map {
+.map,
+.text-about {
     flex: 0 0 75%;
     max-width: 75%;
 }
