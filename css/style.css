@@ -3,11 +3,11 @@ html {
     height: 100%;
     max-width: 1920px;
     background: #ffffff;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding: 0;
     margin: 0;
     font-family: Monrope, TenorSans, sans-serif;
-    overflow-y: auto;
+    overflow: auto;
 
 }
 
@@ -21,6 +21,7 @@ html {
 
 * {
     outline: none;
+    box-sizing: border-box;
 }
 
 #wrapper,
@@ -35,6 +36,10 @@ html {
 .header {
     position: relative;
     z-index: 10;
+}
+
+p {
+    color: #242424;
 }
 
 nav {
@@ -74,8 +79,9 @@ nav ul li:nth-child(2) {
 .second,
 .second > a,
 .second > button,
-.second > p {
-    color: black;
+.second > p,
+.second .footer-contact > p {
+    color: #242424;
 }
 
 nav a {
@@ -334,7 +340,8 @@ th {
 }
 
 /*Works*/
-.gallery {
+.gallery,
+.contact {
     margin-top: 5em;
 }
 
@@ -346,6 +353,26 @@ th {
     margin: 5em 0;
     position: relative;
     right: -43%;
+}
+
+/*Contact*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5em;
+    box-sizing: border-box;
+    margin-bottom: 5em;
+}
+
+.text-contact {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: left;
+}
+
+.map {
+    flex: 0 0 75%;
+    max-width: 75%;
 }
 
 /*footer*/
@@ -400,13 +427,15 @@ th {
     background-image: url(../img/logoinst2.png);
 }
 
-.second .social-btn-vk {
+.second .social-btn-vk,
+.contact-social .social-btn-vk {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/logovk2.png);
 }
 
-.second .social-btn-insta {
+.second .social-btn-insta,
+.contact-social .social-btn-insta {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/logoinst2.png);
@@ -425,12 +454,13 @@ th {
 
 .second > .footer-contact {
     border-top: 1.3px solid #C9DFFA;
-    color: black;
+    color: #242424;
 }
 
 .footer-contact > p {
     font-size: 14px;
     margin-right: 1.5em;
+    color: white;
 }
 
 .footer-contact > a {
