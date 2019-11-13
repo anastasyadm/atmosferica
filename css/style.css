@@ -7,6 +7,8 @@ html {
     padding: 0;
     margin: 0;
     font-family: Monrope, TenorSans, sans-serif;
+    overflow-y: auto;
+
 }
 
 @font-face {
@@ -65,7 +67,7 @@ nav ul li:nth-child(2) {
 }
 
 .logo {
-    margin-right: 27em;
+    margin-right: 24em;
     margin-left: 0em;
 }
 
@@ -329,6 +331,21 @@ th {
 
 th {
     background-color: #7accee !important;
+}
+
+/*Works*/
+.gallery {
+    margin-top: 5em;
+}
+
+.row {
+    margin: 0 12em;
+}
+
+.btn-gallery {
+    margin: 5em 0;
+    position: relative;
+    right: -43%;
 }
 
 /*footer*/
