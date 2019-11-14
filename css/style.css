@@ -372,11 +372,23 @@ th {
     text-align: left;
 }
 
+.text-contact {
+    padding-right: 8%;
+}
+
 .map,
 .text-about {
     flex: 0 0 75%;
     max-width: 75%;
 }
+
+.contact-social {
+    width: inherit;
+    min-height: 49px;
+    margin-bottom: 2em;
+    margin-top: 5em;
+}
+
 
 /*footer*/
 .footer {
@@ -400,6 +412,17 @@ th {
     height: 49px;
     background-color: inherit;
     float: right;
+    margin: auto;
+    box-sizing: border-box;
+    margin-right: 3px;
+
+}
+
+.social-btn-left {
+    width: 46px;
+    height: 49px;
+    background-color: inherit;
+    float: left;
     margin: auto;
     box-sizing: border-box;
     margin-right: 3px;
