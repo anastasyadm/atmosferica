@@ -207,14 +207,14 @@ button {
     opacity: 1;
 }
 
-.slideshow.slideshow-right {
+.slideshow .slideshow-right {
     left: 0;
     z-index: 1;
     width: 50vw;
     pointer-events: none;
 }
 
-.slideshow.slideshow-right .slider {
+.slideshow .slideshow-right .slider {
     left: 0;
     position: absolute;
 }
@@ -270,18 +270,28 @@ button {
 
 /*About*/
 .about {
-    min-height: 863, 06px;
+    padding: 0 5em;
+    box-sizing: border-box;
+        min-height: 595px !important;
+
 }
 
 .img-about {
-    background-image: url(../img/dots.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    display: inline-block;
     width: 60%;
     position: absolute;
     z-index: 1;
-    height: 100%;
+    /* height: 100%; */
+    height: auto;
+    max-width: 50%;
+    text-align: left;
+    background-image: url(../img/dots.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 5em;
 }
+
 
 /*.img-about img {
     width: 50%;
@@ -290,29 +300,151 @@ button {
 
 .img-first {
     top: 10%;
-    right: 20%;
-    position: absolute;
-    width: 50%;
-    height: 50%;
+    right: -30%;
+    position: relative;
+    width: 55%;
+    height: 46%;
     z-index: 2;
+
+
 }
 
 .img-second {
-    top: 50%;
-    right: 20%;
-    position: absolute;
-    width: 50%;
-    height: 50%;
+    top: -40px;
+    right: -12%;
+    position: relative;
+    width: 65%;
+    height: 40%;
     z-index: 1;
+}
+
+.text-about {
+    max-width: 34%;
+    float: right;
+    padding-top: 10%;
+    text-align: left;
 }
 
 /*service*/
 .price {
     margin-top: 5.5em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10em;
 }
 
 .first-col {
-    width: 22em;
+    width: 10em;
+}
+
+.div {
+    position: relative;
+    display: inline-block;
+}
+
+.div0:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 335%;
+    width: 300%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 137%;
+    width: 42%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 139%;
+    width: 120%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 132%;
+    width: 230%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div4:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 111%;
+    width: 267%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div5:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 137%;
+    width: 94%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div6:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 161%;
+    width: 60%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div7:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 137%;
+    width: 11%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div8:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 120%;
+    width: 42%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.table1,
+.table2 {
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 table {
@@ -326,13 +458,26 @@ table {
 td,
 th {
     border: 1px solid #595959;
+    border-style: hidden;
 }
+
 
 td,
 th {
     padding: 3px;
     width: 30px;
     height: 25px;
+}
+
+tr {
+    border-style: hidden;
+}
+
+tr:first-child,
+.table1 tr:nth-child(17),
+.table2 tr:nth-child(5),
+.table2 tr:nth-child(9) {
+    height: 3em;
 }
 
 th {
@@ -356,8 +501,7 @@ th {
 }
 
 /*Contact*/
-.contact,
-.about {
+.contact {
     display: flex;
     flex-wrap: wrap;
     padding: 0 5em;
@@ -365,8 +509,7 @@ th {
     margin-bottom: 5em;
 }
 
-.text-contact,
-.img-about {
+.text-contact {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: left;
@@ -376,8 +519,7 @@ th {
     padding-right: 8%;
 }
 
-.map,
-.text-about {
+.map {
     flex: 0 0 75%;
     max-width: 75%;
 }
