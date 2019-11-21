@@ -107,16 +107,6 @@ body html {
 }
 
 
-.the-most {
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    width: 50vw;
-    max-width: 200px;
-    padding: 10px;
-}
-
 .the-most img {
     max-width: 100%;
 }

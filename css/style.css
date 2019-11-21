@@ -114,6 +114,9 @@ button {
 }
 
 /*Slider*/
+.inner {
+    min-height: 30vh;
+}
 
 .slideshow {
     position: absolute;
@@ -246,7 +249,7 @@ button {
     z-index: 100;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
     .slideshow-text {
         font-size: 40px;
     }
@@ -254,7 +257,7 @@ button {
 
 .the-most {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     bottom: 0;
     left: 25%;
     top: 25%;
@@ -272,7 +275,7 @@ button {
 .about {
     padding: 0 5em;
     box-sizing: border-box;
-        min-height: 595px !important;
+    min-height: 595px !important;
 
 }
 
