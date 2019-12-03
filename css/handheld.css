@@ -103,10 +103,12 @@
         max-width: 100%;
         text-align: center;
         padding-right: 0% !important;
+        flex: 100%;
     }
 
     .map {
         max-width: 100%;
+        flex: 100%;
     }
 
     .social-btn-insta2,
@@ -245,18 +247,6 @@
 
     }
 
-    #sidebar nav a:before,
-    #sidebar nav a:after {
-        border-radius: 0.2em;
-        bottom: 0;
-        content: '';
-        height: 0.2em;
-        position: absolute;
-        right: 0;
-        width: 100%;
-
-    }
-
 
 
     #sidebar nav a:before {
@@ -266,16 +256,17 @@
 
 
 
-    #sidebar nav a:hover {
-        color: rgba(0, 0, 0, 0.55);
-        /* цвет шрифта при наведении*/
-    }
+
 
     #sidebar nav a.active {
         color: #000000;
     }
 
     #sidebar nav a.active:after {
+        max-width: 100%;
+    }
+
+    #sidebar nav a.active:hover {
         max-width: 100%;
     }
 

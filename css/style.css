@@ -13,14 +13,15 @@ html {
 
 @font-face {
 
-    font-family: 'Monrope';
-    src: url('font/Monrope-regular.otf');
+    font-family: 'Manrope';
+    src: url('../font/manrope-regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 * {
     outline: none;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -47,6 +48,8 @@ nav {
 }
 
 nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: inherit;
     line-height: inherit;
@@ -77,7 +80,6 @@ nav > ul > li > a:after {
     position: absolute;
     -webkit-transition: width .5s ease-out;
     -moz--transition: width .5s ease-out;
-    -o-transition: width .5s ease-out;
     transition: width .5s ease-out;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(50%);
@@ -112,9 +114,7 @@ nav > ul > li > a:hover:after {
 }
 
 nav a {
-    -moz-transition: color 0.2s ease;
     -webkit-transition: color 0.2s ease;
-    -ms-transition: color 0.2s ease;
     transition: color 0.2s ease;
     border: 0;
     color: white;
@@ -228,6 +228,7 @@ button {
     left: auto;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     opacity: 0.6;
 }
@@ -301,6 +302,7 @@ button {
 /*About*/
 .about {
     padding: 0 5em;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 595px !important;
 
@@ -358,7 +360,10 @@ button {
 /*service*/
 .price {
     margin-top: 5.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0 10em;
 }
@@ -473,6 +478,8 @@ button {
 
 .table1,
 .table2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
 }
@@ -532,14 +539,20 @@ th {
 
 /*Contact*/
 .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0 5em;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 5em;
 }
 
 .text-contact {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
     text-align: left;
@@ -550,6 +563,8 @@ th {
 }
 
 .map {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
 }
@@ -566,6 +581,8 @@ th {
 .footer {
     position: relative;
     z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: auto;
     line-height: inherit;
@@ -585,6 +602,7 @@ th {
     background-color: inherit;
     float: right;
     margin: auto;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 3px;
 
@@ -596,6 +614,7 @@ th {
     background-color: inherit;
     float: left;
     margin: auto;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 3px;
 
@@ -641,8 +660,11 @@ th {
 
 
 .footer-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: white;
     border-top: 1.3px solid white;
@@ -668,6 +690,7 @@ th {
     padding: 0;
     background-position: center;
     display: inline-block;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
     margin-left: 3%;
