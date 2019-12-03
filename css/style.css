@@ -66,6 +66,29 @@ nav ul li:nth-child(2) {
     margin-left: 0;
 }
 
+nav > ul > li > a:after {
+    display: block;
+    content: "";
+    background-color: #7accee;
+    height: 1px;
+    top: 99%;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .5s ease-out;
+    -moz--transition: width .5s ease-out;
+    -o-transition: width .5s ease-out;
+    transition: width .5s ease-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(50%);
+    /* transform: translateX(-50%); */
+    max-width: 1920px;
+}
+
+nav > ul > li > a:hover:after {
+    width: 100%;
+}
+
 .menu {
     padding: 0.6em 0;
     margin-right: 0.695em;

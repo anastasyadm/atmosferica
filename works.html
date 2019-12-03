@@ -5,7 +5,7 @@
     <title>Atmosferica</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="shortcut icon" type="image/png" href="images\logo.png">
+    <link rel="shortcut icon" type="image/png" href="img\logo.png">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/handheld.css" media="handheld,only screen and (max-device-width:480px)" />
 </head>
@@ -98,8 +98,7 @@
     <script>
         var link = document.querySelector(".buy-btn");
         var form = document.querySelector(".popup-form");
-        var checkin = form.querySelector("[name=name-user]");
-        var checkout = form.querySelector("[name=name-email]");
+
         var close = document.querySelector(".closebtn");
 
         link.addEventListener("click", function(event) {
@@ -130,9 +129,9 @@
         });
 
     </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.scrollex.min.js"></script>
-    <script src="js/jquery.scrolly.min.js"></script>
+
     <script src="js/browser.min.js"></script>
     <script src="js/breakpoints.min.js"></script>
     <script src="js/util.js"></script>
