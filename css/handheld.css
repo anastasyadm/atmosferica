@@ -156,9 +156,14 @@
 
 @media screen and (max-width: 500px) {
 
-    .btn {
-        position: relative;
-        right: 25px;
+
+
+    .index-btn {
+        left: 0%;
+    }
+
+    .burger-btn {
+        color: black;
     }
 
     #sidebar {
@@ -259,18 +264,7 @@
         background-image: url(../img/burger.png)
     }
 
-    #sidebar nav a:after {
-        background-image: -moz-linear-gradient(to right, #ffffff, #f78f08);
-        background-image: -webkit-linear-gradient(to right, #ffffff, #f78f08);
-        /*#ffffff, #fafafa*/
-        background-image: -ms-linear-gradient(to right, #ffffff, #f78f08);
-        background-image: linear-gradient(to right, #ffffff, #f78f08);
-        -moz-transition: max-width 0.2s ease;
-        -webkit-transition: max-width 0.2s ease;
-        -ms-transition: max-width 0.2s ease;
-        transition: max-width 0.28s ease;
-        max-width: 0;
-    }
+
 
     #sidebar nav a:hover {
         color: rgba(0, 0, 0, 0.55);
@@ -285,9 +279,7 @@
         max-width: 100%;
     }
 
-    body.is-preload #sidebar > .inner {
-        opacity: 0;
-    }
+
 
     body.is-preload #sidebar nav ul li {
         -moz-transform: translateY(2em);
@@ -347,10 +339,7 @@
         padding: 0;
     }
 
-    #sidebar nav a:after {
-        background-image: none;
-        background-color: #7accee;
-    }
+
 
     .logo > a {
         display: inline-flex !important;
@@ -368,6 +357,8 @@
     }
 
 
+
+
 }
 
 @media screen and (max-width: 1098px) {
@@ -377,6 +368,7 @@
         height: 50px;
         position: relative;
         z-index: 300000;
+        left: 80%;
     }
 
     .menu-btn span,
@@ -389,7 +381,7 @@
         margin-left: -10px;
         width: 20px;
         height: 2px;
-        background-color: #7accee;
+        background-color: #C9DFFA;
     }
 
     .menu-btn span::before,

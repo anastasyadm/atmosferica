@@ -69,7 +69,7 @@ nav ul li:nth-child(2) {
 nav > ul > li > a:after {
     display: block;
     content: "";
-    background-color: #7accee;
+    background-color: #C9DFFA;
     height: 1px;
     top: 99%;
     width: 0%;
@@ -92,6 +92,10 @@ nav > ul > li > a:hover:after {
 .menu {
     padding: 0.6em 0;
     margin-right: 0.695em;
+}
+
+.burger-logo {
+    display: none;
 }
 
 .logo {
@@ -507,7 +511,7 @@ tr:first-child,
 }
 
 th {
-    background-color: #7accee !important;
+    background-color: #C9DFFA !important;
 }
 
 /*Works*/
