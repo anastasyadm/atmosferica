@@ -45,6 +45,8 @@
 
     .text-about {
         max-width: 100%;
+        padding: 0 2em;
+
     }
 
     #img-about {
@@ -74,6 +76,10 @@
 
     .img-second {
         display: none;
+    }
+
+    .about {
+        padding: 0 !important;
     }
 
     .table1,
