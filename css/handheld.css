@@ -50,7 +50,8 @@
     #img-about {
         display: block !important;
         width: 100% !important;
-        position: static;
+        max-width: 100%;
+        position: relative;
         /* position: absolute; */
         /* z-index: 1; */
         /* height: 100%; */
@@ -61,16 +62,14 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
-        margin-top: 5em;
+        margin-top: 3em;
     }
 
     .img-first {
         /* top: 10%; */
-        /* right: -30%; */
-
+        right: 0%;
         width: 100%;
         height: 46%;
-
     }
 
     .img-second {
