@@ -69,7 +69,7 @@ nav ul li:nth-child(2) {
     margin-left: 0;
 }
 
-nav > ul > li > a:after {
+nav > ul > li > a:not(.logoa):after {
     display: block;
     content: "";
     background-color: #C9DFFA;
@@ -87,7 +87,7 @@ nav > ul > li > a:after {
     max-width: 1920px;
 }
 
-nav > ul > li > a:hover:after {
+nav > ul > li > a:not(.logoa):hover:after {
     width: 100%;
 }
 
@@ -100,7 +100,8 @@ nav > ul > li > a:hover:after {
     display: none;
 }
 
-.logo {
+.logo,
+.logo1 {
     margin-right: 24em;
     margin-left: 0em;
 }
@@ -305,6 +306,7 @@ button {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 595px !important;
+    margin-bottom: 4em;
 
 }
 
@@ -381,8 +383,8 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 335%;
-    width: 300%;
+    left: 129%;
+    width: 490%;
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -392,8 +394,8 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 137%;
-    width: 42%;
+    left: 131%;
+    width: 48%;
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -403,8 +405,9 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 139%;
-    width: 120%;
+    left: 130%;
+    width: 126%;
+
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -415,7 +418,8 @@ button {
     position: absolute;
     bottom: 0;
     left: 132%;
-    width: 230%;
+    width: 226%;
+
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -425,8 +429,8 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 111%;
-    width: 267%;
+    left: 130%;
+    width: 238%;
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -436,8 +440,8 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 137%;
-    width: 94%;
+    left: 131%;
+    width: 101%;
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -447,8 +451,8 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 161%;
-    width: 60%;
+    left: 131%;
+    width: 89%;
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -458,8 +462,8 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 137%;
-    width: 11%;
+    left: 130%;
+    width: 18%;
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -469,8 +473,97 @@ button {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 120%;
-    width: 42%;
+    left: 129%;
+    width: 31%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div9:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 129%;
+    width: 70%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div10:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 131%;
+    width: 232%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div11:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 130%;
+    width: 68%;
+
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div12:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 129%;
+    width: 107%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div13:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 132%;
+    width: 389%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div14:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 129%;
+    width: 31%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div8:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 129%;
+    width: 31%;
+    height: 2px;
+    margin-left: -30%;
+    background: #C9DFFA;
+}
+
+.div8:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 129%;
+    width: 31%;
     height: 2px;
     margin-left: -30%;
     background: #C9DFFA;
@@ -529,12 +622,18 @@ th {
 
 .row {
     margin: 0 12em;
+    margin: 0 12em;
 }
 
 .btn-gallery {
     margin: 5em 0;
     position: relative;
     right: -43%;
+}
+
+.col-md-4 {
+    margin-right: 0.5em;
+    margin-left: 1em;
 }
 
 /*Contact*/
