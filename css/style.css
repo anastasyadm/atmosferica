@@ -93,7 +93,7 @@ nav > ul > li > a:not(.logoa):hover:after {
 
 .menu {
     padding: 0.6em 0;
-    margin-right: 0.695em;
+    margin-right: 1.695em;
 }
 
 .burger-logo {
@@ -102,7 +102,7 @@ nav > ul > li > a:not(.logoa):hover:after {
 
 .logo,
 .logo1 {
-    margin-right: 24em;
+    margin-right: 19em;
     margin-left: 0em;
 }
 
@@ -139,6 +139,10 @@ button {
 
 .btn {
     margin-left: 9em;
+}
+
+.btn1 {
+    margin-left: 9.9em;
 }
 
 /*Slider*/
@@ -715,7 +719,8 @@ th {
     margin: auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-right: 3px;
+    margin-right: 25px;
+
 
 }
 
@@ -744,14 +749,14 @@ th {
 }
 
 .second .social-btn-vk,
-.contact-social .social-btn-vk {
+.social-btn-vk2 {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/logovk2.png);
 }
 
 .second .social-btn-insta,
-.contact-social .social-btn-insta {
+.social-btn-insta2 {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/logoinst2.png);
