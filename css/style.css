@@ -269,7 +269,6 @@ button {
     font-family: 'Monrope-regular', sans-serif;
     font-weight: 100;
     pointer-events: none;
-    text-transform: uppercase;
     line-height: 0.8;
 }
 
@@ -383,195 +382,7 @@ button {
     display: inline-block;
 }
 
-.div0:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 129%;
-    width: 490%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
 
-.div1:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 131%;
-    width: 48%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div2:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 130%;
-    width: 126%;
-
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div3:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 132%;
-    width: 226%;
-
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div4:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 130%;
-    width: 238%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div5:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 131%;
-    width: 101%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div6:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 131%;
-    width: 89%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div7:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 130%;
-    width: 18%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div8:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 129%;
-    width: 31%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div9:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 129%;
-    width: 70%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div10:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 131%;
-    width: 232%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div11:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 130%;
-    width: 68%;
-
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div12:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 129%;
-    width: 107%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div13:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 132%;
-    width: 389%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div14:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 129%;
-    width: 31%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div8:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 129%;
-    width: 31%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
-
-.div8:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 129%;
-    width: 31%;
-    height: 2px;
-    margin-left: -30%;
-    background: #C9DFFA;
-}
 
 .table1,
 .table2 {
@@ -659,11 +470,13 @@ th {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: left;
-}
-
-.text-contact {
+    background-image: url(../img/backgroundgrup1.png);
+    background-repeat: no-repeat;
+    background-position: left;
     padding-right: 8%;
 }
+
+
 
 .map {
     -webkit-box-flex: 0;
@@ -712,7 +525,7 @@ th {
 }
 
 .social-btn-left {
-    width: 46px;
+    width: 36px;
     height: 49px;
     background-color: inherit;
     float: left;
